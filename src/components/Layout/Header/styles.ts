@@ -16,6 +16,7 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 `;
 
 export const Logo = styled.div`
@@ -32,6 +33,8 @@ export const Logo = styled.div`
 export const Nav = styled.nav`
   display: flex;
   gap: 2rem;
+  flex: 1;
+  justify-content: center;
   
   a {
     color: white;
@@ -41,6 +44,24 @@ export const Nav = styled.nav`
     
     &:hover {
       color: #ffd700;
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+`;
+
+export const UserSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 0.875rem;
+
+  @media (max-width: 768px) {
+    span {
+      display: none;
     }
   }
 `;

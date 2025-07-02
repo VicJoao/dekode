@@ -58,11 +58,12 @@ export const CodeInfo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 `;
 
 export const CodeTitle = styled.h3`
   font-size: 1.125rem;
-  margin: 0;
+  margin: 0 0 0.25rem 0;
   color: #ffd700;
 `;
 
@@ -72,6 +73,11 @@ export const CodeLanguage = styled.span`
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.875rem;
+`;
+
+export const CodeActions = styled.div`
+  display: flex;
+  gap: 0.5rem;
 `;
 
 export const EmptyState = styled.div`
@@ -92,4 +98,13 @@ export const EmptyTitle = styled.h3`
 
 export const EmptyDescription = styled.p`
   margin-bottom: 2rem;
+`;
+
+export const LoadingState = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 1.125rem;
+  opacity: 0.7;
 `;
