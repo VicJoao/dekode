@@ -20,7 +20,7 @@ import {
   EmptyDescription,
 } from './styles';
 
-const Dashboard: React.FC = () => {
+function Dashboard() {
   // Sample code snippets for demonstration
   const codeSnippets = [
     {
@@ -92,6 +92,6 @@ const Dashboard: React.FC = () => {
       )}
     </DashboardContainer>
   );
-};
+}
 
 export default Dashboard;
